@@ -1,0 +1,11 @@
+@font-face{font-family:"Instrument Sans";src:url(fonts/InstrumentSans-var.woff2) format("woff2");font-weight:400 700;font-display:swap}
+:root{--red:#E5322D;--red-d:#C42620;--red-soft:#FBE3DF;--bg:#EEE8E0;--cream:#F7F3EE;--card:#FFFDFA;--sand:#EFE8DE;--ink:#1B1A17;--olive:#6A6A4C;--mute:#7C786F;--line:#E3DCD1;--paper:#F7F3EE;
+--sans:"Instrument Sans",-apple-system,"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;--serif:var(--sans)}
+.mz-bar{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;font-family:var(--sans);pointer-events:none}
+.mz-bar a{pointer-events:auto;color:var(--ink);text-decoration:none;font-size:13px;letter-spacing:.04em;display:flex;align-items:center;gap:8px}
+.mz-bar img{height:24px;display:block}
+.mz-bar .back{background:var(--ink);color:var(--cream);font-weight:600;padding:8px 16px;border-radius:999px;transition:.2s;box-shadow:0 6px 18px -8px rgba(60,40,20,.4)}
+.mz-bar .back:hover{background:var(--red);color:#fff}
+.mz-credit{position:fixed;left:0;right:0;bottom:0;z-index:1000;text-align:center;padding:8px 12px;font:11px/1.6 var(--sans);letter-spacing:.04em;color:var(--mute);pointer-events:none}
+.mz-credit a{color:var(--ink);pointer-events:auto;text-decoration:underline;text-underline-offset:3px}
+html.mz-embed .mz-bar{display:none}html.mz-embed .tw{padding-top:34px}
